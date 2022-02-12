@@ -1,16 +1,21 @@
 /*jshint esversion: 6 */
 
-// alert("hello");
+const numberOfFilms = +prompt('Skolko filmov glanul?', '');
 
-// const result = confirm("Are you here?");
-// console.log(result);
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false
+};
 
-// const answer = +prompt("vam est 18?", "10");
-// console.log(answer + 5);
+const a = prompt('Kakoy film?', '');
+      b = prompt('Ocenka?', '');
+      c = prompt('Kakoy film?', '');
+      d = prompt('Ocenka?', '');
 
-const answer = [];
-answer [0] = prompt('Kak imia?', '');
-answer [1] = prompt('Skolko let, epta?', '');
-answer [2] = prompt('Lulakebab?', '');
+personalMovieDB.movies [a] = b;
+personalMovieDB.movies [c] = d;
 
-document.write(answer);
+console.log(personalMovieDB);
